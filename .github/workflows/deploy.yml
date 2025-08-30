@@ -3,11 +3,10 @@ name: Deploy to WordPress.org
 on:
   push:
     tags:
-      - "*"   # Runs only when you push a new tag (e.g., 1.0.0, 1.0.1)
+      - "*"   # Runs only when you push a new tag
 
 jobs:
   deploy:
-    name: New release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -15,9 +14,6 @@ jobs:
 
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
-        with:
-          slug: ait-easy-post-customization
-          build-dir: ./   # your plugin files are at repo root
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
