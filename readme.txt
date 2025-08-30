@@ -8,7 +8,7 @@ Stable tag: 1.0.1
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
-Short Description: Easily set expiry dates for posts and custom post types, automatically unpublishing content when it becomes outdated.
+Easily set expiry dates for posts and custom post types, automatically unpublishing content when it becomes outdated.
 
 == AIT Easy Post Customization ==
 
@@ -58,7 +58,7 @@ Follow these steps to install and activate AIT Easy Post Customization:
 
 == Frequently Asked Questions ==
 
-=== 1. What is AIT Easy Post Customization? ===
+= 1. What is AIT Easy Post Customization? =
 AIT Easy Post Customization is a WordPress plugin that allows users to easily set expiry dates for posts and custom post types, helping to manage content visibility and relevance effectively.
 
 === 2. How do I install the plugin? ===
