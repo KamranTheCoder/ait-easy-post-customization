@@ -3,7 +3,7 @@
 /**
  * Plugin Name: AIT Easy Post Customization
  * Description: This plugin is essential for the proper theme functionality.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: kamranchannar
  * License: GPL2
  * Text Domain: ait-easy-post-customization
