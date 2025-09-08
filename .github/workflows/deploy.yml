@@ -15,7 +15,7 @@ jobs:
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
-          SVN_USERNAME: ${{ secrets.WP_ORG_USERNAME }}
-          SVN_PASSWORD: ${{ secrets.WP_ORG_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
           SLUG: ait-easy-post-customization
           ASSETS_DIR: assets-wporg
