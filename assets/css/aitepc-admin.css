@@ -1,0 +1,196 @@
+/* AIT Easy Post Customization - Admin Styles */
+:root {
+    --aitepc-primary: #007bff;
+    --aitepc-secondary: #6c757d;
+    --aitepc-success: #28a745;
+    --aitepc-bg: #ffffff;
+    --aitepc-card-bg: #f8f9fa;
+    --aitepc-text: #212529;
+    --aitepc-muted: #6c757d;
+}
+
+.aitepc-wrap {
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--aitepc-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.aitepc-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--aitepc-text);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.aitepc-tabs {
+    position: sticky;
+    top: 32px;
+    background: var(--aitepc-bg);
+    z-index: 1000;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.aitepc-tabs .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--aitepc-muted);
+    border: none;
+    border-radius: 0;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.aitepc-tabs .nav-link:hover {
+    color: var(--aitepc-primary);
+    background: rgba(0, 123, 255, 0.05);
+}
+
+.aitepc-tabs .nav-link.active {
+    color: var(--aitepc-primary);
+    border-bottom: 3px solid var(--aitepc-primary);
+    background: linear-gradient(180deg, var(--aitepc-bg), rgba(0, 123, 255, 0.1));
+}
+
+.aitepc-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.aitepc-card:hover {
+    transform: translateY(-2px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--aitepc-text);
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--aitepc-text);
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--aitepc-primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--aitepc-primary);
+    border-color: var(--aitepc-primary);
+}
+
+.aitepc-btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aitepc-btn.btn-primary {
+    background: linear-gradient(45deg, var(--aitepc-primary), #0051a8);
+    border: none;
+}
+
+.aitepc-btn.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-outline-secondary {
+    border-color: var(--aitepc-secondary);
+    color: var(--aitepc-secondary);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--aitepc-secondary);
+    color: var(--aitepc-bg);
+}
+
+.aitepc-table {
+    font-size: 0.95rem;
+}
+
+.aitepc-table th {
+    font-weight: 600;
+    color: var(--aitepc-text);
+    background: var(--aitepc-card-bg);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.aitepc-table td {
+    vertical-align: middle;
+}
+
+.aitepc-table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.05);
+}
+
+.alert {
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background: rgba(40, 167, 69, 0.1);
+    border-color: var(--aitepc-success);
+    color: var(--aitepc-success);
+}
+
+.alert-info {
+    background: rgba(0, 123, 255, 0.1);
+    border-color: var(--aitepc-primary);
+    color: var(--aitepc-primary);
+}
+
+.alert-danger {
+    background: rgba(220, 53, 69, 0.1);
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+@media (max-width: 767.98px) {
+    .aitepc-wrap {
+        padding: 15px;
+    }
+
+    .aitepc-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .aitepc-title {
+        font-size: 1.75rem;
+    }
+}
