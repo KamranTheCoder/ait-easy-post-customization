@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AIT Easy Post Customization
  * Description: This plugin is essential for the proper theme functionality, including expiry date and custom fields management.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Muhammad Kamran
  * License: GPL-2.0-or-later
  * Text Domain: ait-easy-post-customization
