@@ -4,7 +4,7 @@ Tags: post expiration, post expiry, expiry date, schedule post, auto expire, cus
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,29 @@ Yes, AIT Easy Post Customization is completely free to use and is licensed under
 3. Custom fields metabox on a post edit screen.
 
 == Changelog ==
+= 2.0.0 - 2025-10-20 =
+**COMPLETE DASHBOARD REDESIGN - PREMIUM EDITION**
+* ✨ **BRAND NEW DESIGN**: Completely rebuilt dashboard with outstanding premium aesthetics
+* 🎨 **Stunning Gradients**: Beautiful purple-to-blue gradient color scheme throughout
+* 🌊 **Animated Header**: Eye-catching header with floating background patterns and bouncing icon animation
+* 📑 **Modern Tab Navigation**: Pill-style tabs with smooth transitions and pulsing active state icons
+* 💳 **Premium Cards**: Animated gradient top borders that shift colors continuously
+* 🎯 **Glowing Accents**: Pulsing dot indicators on card titles with gradient glow effects
+* ⚡ **Ripple Effects**: Interactive button ripple effects on hover for premium feel
+* 📊 **Enhanced Tables**: Gradient headers with smooth row hover animations
+* 🎭 **Smooth Animations**: Fade-in-up animations for tab content transitions
+* 🖱️ **Micro-interactions**: Icon rotation and scale effects on hover throughout the interface
+* 🎪 **Custom Scrollbar**: Gradient scrollbar matching the overall design theme
+* 📱 **Fully Responsive**: Perfect on all devices from desktop to mobile
+* ♿ **Accessibility**: Enhanced focus states and WCAG compliant color contrast
+* 🚀 **Performance**: Optimized CSS with smooth 60fps animations
+* 🎨 **Color System**: Professional color palette with purple, pink, and blue accents
+* 💎 **Premium Feel**: Enterprise-level dashboard design worthy of premium plugins
+
+= 1.0.3 - 2025-09-15 =
+* Bug fixes and performance improvements
+* Enhanced security measures
+
 = 1.0.2 - 2025-09-09 =
 * Changed admin menu name from "AIT Expiry Date" to "Easy Post Customization" for better branding.
 * Introduced modern admin interface with custom CSS (`aitepc-admin.css`), sticky tabs, Dashicons, and gradient effects.
@@ -109,6 +132,9 @@ Yes, AIT Easy Post Customization is completely free to use and is licensed under
 * Added custom fields management for text, textarea, and date fields.
 
 == Upgrade Notice ==
+= 2.0.0 =
+🎉 MASSIVE UPDATE! Experience a COMPLETELY REDESIGNED premium dashboard with stunning animated gradients, floating patterns, ripple effects, and enterprise-level UI/UX. This is not just an update - it's a complete transformation! Your dashboard will look like a premium SaaS application. MUST UPDATE!
+
 = 1.0.2 =
 This update introduces a modern admin interface with sticky tabs, form validation, and enhanced usability. The menu name is now "Easy Post Customization" for consistency. Update for a more user-friendly experience.
 

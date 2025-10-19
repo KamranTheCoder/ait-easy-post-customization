@@ -1,196 +1,749 @@
-/* AIT Easy Post Customization - Admin Styles */
+/*
+ * AIT Easy Post Customization - Premium Dashboard Design
+ * Version: 2.0.0
+ * Modern, Professional & Outstanding UI/UX
+ */
+
 :root {
-    --aitepc-primary: #007bff;
-    --aitepc-secondary: #6c757d;
-    --aitepc-success: #28a745;
-    --aitepc-bg: #ffffff;
-    --aitepc-card-bg: #f8f9fa;
-    --aitepc-text: #212529;
-    --aitepc-muted: #6c757d;
+    /* Primary Colors - Deep Ocean Blue Gradient */
+    --aitepc-primary-start: #667eea;
+    --aitepc-primary-end: #764ba2;
+    --aitepc-accent: #f093fb;
+    --aitepc-accent-light: #4facfe;
+
+    /* Complementary Colors */
+    --aitepc-success: #00d4aa;
+    --aitepc-success-bg: #e6fff9;
+    --aitepc-warning: #ffd93d;
+    --aitepc-warning-bg: #fff9e6;
+    --aitepc-danger: #ff6b9d;
+    --aitepc-danger-bg: #ffe6ef;
+    --aitepc-info: #00b4d8;
+    --aitepc-info-bg: #e6f7fc;
+
+    /* Neutral Colors */
+    --aitepc-dark: #2d3748;
+    --aitepc-text: #1a202c;
+    --aitepc-text-muted: #718096;
+    --aitepc-bg-main: #f7fafc;
+    --aitepc-card-bg: #ffffff;
+    --aitepc-border: #e2e8f0;
+    --aitepc-border-light: #edf2f7;
+
+    /* Shadows */
+    --aitepc-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --aitepc-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --aitepc-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --aitepc-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.15);
+    --aitepc-shadow-colored: 0 8px 32px rgba(102, 126, 234, 0.25);
 }
 
+/* Global Background */
+body.toplevel_page_aitepc-expiry-date-settings {
+    background: var(--aitepc-bg-main);
+}
+
+/* Main Container */
 .aitepc-wrap {
-    max-width: 1140px;
-    margin: 20px auto;
-    padding: 20px;
-    background: var(--aitepc-bg);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header Section with Outstanding Design */
 .aitepc-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--aitepc-text);
+    background: linear-gradient(135deg, var(--aitepc-primary-start) 0%, var(--aitepc-primary-end) 100%);
+    padding: 3.5rem 3rem;
+    border-radius: 24px;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--aitepc-shadow-colored);
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
+/* Animated Background Pattern */
+.aitepc-title::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: floatPattern 20s ease-in-out infinite;
+}
+
+.aitepc-title::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: floatPattern 15s ease-in-out infinite reverse;
+}
+
+@keyframes floatPattern {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(30px, -30px) scale(1.1); }
+}
+
+.aitepc-title .dashicons {
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.25rem;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    animation: iconBounce 3s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-8px) rotate(-5deg); }
+    75% { transform: translateY(-4px) rotate(5deg); }
+}
+
+.aitepc-title span {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Modern Tab Navigation */
 .aitepc-tabs {
+    background: var(--aitepc-card-bg);
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--aitepc-shadow);
     position: sticky;
     top: 32px;
-    background: var(--aitepc-bg);
-    z-index: 1000;
-    border-bottom: 1px solid #dee2e6;
+    z-index: 100;
+    border: 1px solid var(--aitepc-border-light);
+}
+
+.aitepc-tabs .nav {
+    display: flex;
+    gap: 6px;
 }
 
 .aitepc-tabs .nav-link {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--aitepc-muted);
+    flex: 1;
     border: none;
-    border-radius: 0;
-    padding: 12px 20px;
+    background: transparent;
+    color: var(--aitepc-text-muted);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 16px 24px;
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.aitepc-tabs .nav-link .dashicons {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.aitepc-tabs .nav-link:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    color: var(--aitepc-primary-start);
+    transform: translateY(-2px);
+}
+
+.aitepc-tabs .nav-link:hover .dashicons {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.aitepc-tabs .nav-link.active {
+    background: linear-gradient(135deg, var(--aitepc-primary-start) 0%, var(--aitepc-primary-end) 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    transform: translateY(-1px);
+}
+
+.aitepc-tabs .nav-link.active .dashicons {
+    animation: tabIconPulse 2s ease-in-out infinite;
+}
+
+@keyframes tabIconPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+/* Card Components with Premium Design */
+.aitepc-card {
+    background: var(--aitepc-card-bg);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: var(--aitepc-shadow);
+    border: 1px solid var(--aitepc-border-light);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.aitepc-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--aitepc-primary-start) 0%, var(--aitepc-accent) 50%, var(--aitepc-primary-end) 100%);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.aitepc-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--aitepc-shadow-lg);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.card-body {
+    padding: 2.5rem;
+}
+
+.card-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--aitepc-text);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+}
+
+.card-title::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--aitepc-primary-start), var(--aitepc-accent));
+    border-radius: 50%;
+    margin-right: 1rem;
+    box-shadow: 0 0 16px rgba(102, 126, 234, 0.6);
+    animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.8; }
+}
+
+.card-text {
+    font-size: 1.0625rem;
+    color: var(--aitepc-text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Form Elements with Modern Touch */
+.form-label {
+    font-weight: 600;
+    color: var(--aitepc-text);
+    font-size: 0.9375rem;
+    margin-bottom: 0.625rem;
+    display: block;
+    letter-spacing: 0.01em;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--aitepc-border);
+    border-radius: 12px;
+    padding: 0.875rem 1.125rem;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--aitepc-card-bg);
+    color: var(--aitepc-text);
+    width: 100%;
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: var(--aitepc-primary-start);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--aitepc-primary-start);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+    outline: none;
+    background: var(--aitepc-card-bg);
+}
+
+.form-check-input {
+    width: 1.375rem;
+    height: 1.375rem;
+    border: 2px solid var(--aitepc-border);
+    border-radius: 6px;
+    cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.form-check-input:checked {
+    background: linear-gradient(135deg, var(--aitepc-primary-start), var(--aitepc-primary-end));
+    border-color: var(--aitepc-primary-start);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+.form-check-label {
+    font-weight: 500;
+    color: var(--aitepc-text);
+    font-size: 0.9375rem;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 0.5rem;
+}
+
+/* Premium Button Styles */
+.aitepc-btn,
+.btn {
+    border-radius: 12px;
+    padding: 14px 32px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.02em;
+}
+
+.aitepc-btn::before,
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.aitepc-btn:hover::before,
+.btn:hover::before {
+    width: 400px;
+    height: 400px;
+}
+
+.aitepc-btn.btn-primary,
+.btn-primary {
+    background: linear-gradient(135deg, var(--aitepc-primary-start) 0%, var(--aitepc-primary-end) 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
+    position: relative;
+}
+
+.aitepc-btn.btn-primary:hover,
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.45);
+}
+
+.aitepc-btn.btn-primary:active,
+.btn-primary:active {
+    transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--aitepc-border);
+    background: transparent;
+    color: var(--aitepc-text);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--aitepc-text-muted);
+    color: #ffffff;
+    border-color: var(--aitepc-text-muted);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--aitepc-danger) 0%, #e63946 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(255, 107, 157, 0.3);
+}
+
+.btn-danger:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(255, 107, 157, 0.4);
+}
+
+.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+}
+
+/* Premium Table Design */
+.table-responsive {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--aitepc-shadow);
+    margin-top: 1.5rem;
+}
+
+.aitepc-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9375rem;
+}
+
+.aitepc-table thead th {
+    background: linear-gradient(135deg, var(--aitepc-primary-start) 0%, var(--aitepc-primary-end) 100%);
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 1.25rem 1.5rem;
+    font-size: 0.875rem;
+    border: none;
+}
+
+.aitepc-table tbody td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--aitepc-border-light);
+    color: var(--aitepc-text);
+    vertical-align: middle;
+}
+
+.aitepc-table tbody tr {
+    background: var(--aitepc-card-bg);
+    transition: all 0.3s ease;
+}
+
+.aitepc-table tbody tr:hover {
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+    transform: scale(1.005);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.aitepc-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alert Notifications */
+.alert {
+    border-radius: 16px;
+    padding: 1.25rem 1.75rem;
+    border: 2px solid;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
 
-.aitepc-tabs .nav-link:hover {
-    color: var(--aitepc-primary);
-    background: rgba(0, 123, 255, 0.05);
-}
-
-.aitepc-tabs .nav-link.active {
-    color: var(--aitepc-primary);
-    border-bottom: 3px solid var(--aitepc-primary);
-    background: linear-gradient(180deg, var(--aitepc-bg), rgba(0, 123, 255, 0.1));
-}
-
-.aitepc-card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-}
-
-.aitepc-card:hover {
-    transform: translateY(-2px);
-}
-
-.card-body {
-    padding: 1.5rem;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--aitepc-text);
-}
-
-.card-text {
-    font-size: 0.95rem;
-}
-
-.form-label {
-    font-weight: 500;
-    color: var(--aitepc-text);
-    margin-bottom: 0.5rem;
-}
-
-.form-control, .form-select {
-    border-radius: 6px;
-    border: 1px solid #ced4da;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.form-control:focus, .form-select:focus {
-    border-color: var(--aitepc-primary);
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.form-check-input:checked {
-    background-color: var(--aitepc-primary);
-    border-color: var(--aitepc-primary);
-}
-
-.aitepc-btn {
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.aitepc-btn.btn-primary {
-    background: linear-gradient(45deg, var(--aitepc-primary), #0051a8);
-    border: none;
-}
-
-.aitepc-btn.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
-}
-
-.btn-outline-secondary {
-    border-color: var(--aitepc-secondary);
-    color: var(--aitepc-secondary);
-}
-
-.btn-outline-secondary:hover {
-    background: var(--aitepc-secondary);
-    color: var(--aitepc-bg);
-}
-
-.aitepc-table {
-    font-size: 0.95rem;
-}
-
-.aitepc-table th {
-    font-weight: 600;
-    color: var(--aitepc-text);
-    background: var(--aitepc-card-bg);
-    position: sticky;
+.alert::before {
+    content: '';
+    position: absolute;
+    left: 0;
     top: 0;
-    z-index: 10;
-}
-
-.aitepc-table td {
-    vertical-align: middle;
-}
-
-.aitepc-table tbody tr:hover {
-    background: rgba(0, 123, 255, 0.05);
-}
-
-.alert {
-    border-radius: 6px;
-    font-size: 0.95rem;
+    bottom: 0;
+    width: 6px;
 }
 
 .alert-success {
-    background: rgba(40, 167, 69, 0.1);
+    background: var(--aitepc-success-bg);
     border-color: var(--aitepc-success);
-    color: var(--aitepc-success);
+    color: #047857;
+}
+
+.alert-success::before {
+    background: var(--aitepc-success);
 }
 
 .alert-info {
-    background: rgba(0, 123, 255, 0.1);
-    border-color: var(--aitepc-primary);
-    color: var(--aitepc-primary);
+    background: var(--aitepc-info-bg);
+    border-color: var(--aitepc-info);
+    color: #0369a1;
+}
+
+.alert-info::before {
+    background: var(--aitepc-info);
+}
+
+.alert-warning {
+    background: var(--aitepc-warning-bg);
+    border-color: var(--aitepc-warning);
+    color: #92400e;
+}
+
+.alert-warning::before {
+    background: var(--aitepc-warning);
 }
 
 .alert-danger {
-    background: rgba(220, 53, 69, 0.1);
-    border-color: #dc3545;
-    color: #dc3545;
+    background: var(--aitepc-danger-bg);
+    border-color: var(--aitepc-danger);
+    color: #be123c;
 }
 
-@media (max-width: 767.98px) {
+.alert-danger::before {
+    background: var(--aitepc-danger);
+}
+
+/* Tab Content Animation */
+.tab-content {
+    position: relative;
+}
+
+.tab-pane {
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Validation Styles */
+.invalid-feedback {
+    display: none;
+    color: var(--aitepc-danger);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-select:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+    border-color: var(--aitepc-danger);
+}
+
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+    border-color: var(--aitepc-success);
+}
+
+/* Utility Classes */
+.d-flex { display: flex; }
+.gap-2 { gap: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1.5rem; }
+.text-muted { color: var(--aitepc-text-muted); }
+.text-danger { color: var(--aitepc-danger); }
+.text-center { text-align: center; }
+
+/* Custom Scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: var(--aitepc-border-light);
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--aitepc-primary-start), var(--aitepc-primary-end));
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--aitepc-primary-end), var(--aitepc-primary-start));
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .aitepc-wrap {
-        padding: 15px;
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 30px auto;
     }
+}
 
-    .aitepc-tabs .nav-link {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-    }
-
-    .card-body {
-        padding: 1rem;
+@media (max-width: 768px) {
+    .aitepc-wrap {
+        margin: 20px auto;
     }
 
     .aitepc-title {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        padding: 2.5rem 2rem;
+        border-radius: 20px;
     }
+
+    .aitepc-title .dashicons {
+        font-size: 2.25rem;
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .aitepc-tabs {
+        padding: 6px;
+        border-radius: 16px;
+    }
+
+    .aitepc-tabs .nav {
+        flex-direction: column;
+    }
+
+    .aitepc-tabs .nav-link {
+        padding: 14px 20px;
+        font-size: 0.9375rem;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .aitepc-table thead th,
+    .aitepc-table tbody td {
+        padding: 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .aitepc-title {
+        font-size: 1.5rem;
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+    }
+
+    .aitepc-title .dashicons {
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.75rem;
+    }
+
+    .aitepc-tabs .nav-link {
+        padding: 12px 16px;
+        font-size: 0.875rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.375rem;
+    }
+
+    .aitepc-btn,
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9375rem;
+    }
+
+    .btn-sm {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Additional Premium Effects */
+.aitepc-card.text-center {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.aitepc-card.text-center .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aitepc-card.text-center .card-title {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Link Styling */
+a.text-decoration-none {
+    color: var(--aitepc-primary-start);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+a.text-decoration-none:hover {
+    color: var(--aitepc-primary-end);
+    text-decoration: underline !important;
+}
+
+/* Row and Column Utilities */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Alignment Utilities */
+.d-flex.align-items-center {
+    align-items: center;
+}
+
+/* Enhanced Coming Soon Card */
+.aitepc-card.text-center p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 600px;
 }
