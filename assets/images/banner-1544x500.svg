@@ -1,0 +1,167 @@
+<svg width="1544" height="500" viewBox="0 0 1544 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="accentMain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="lightMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+
+    <filter id="mainGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="mainShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1544" height="500" fill="url(#bgMain)"/>
+
+  <!-- Decorative floating circles -->
+  <circle cx="1350" cy="100" r="120" fill="url(#lightMain)" opacity="0.3">
+    <animate attributeName="cy" values="100;120;100" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1450" cy="350" r="80" fill="url(#lightMain)" opacity="0.25">
+    <animate attributeName="cy" values="350;330;350" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="400" r="100" fill="url(#lightMain)" opacity="0.2">
+    <animate attributeName="cy" values="400;420;400" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="100" r="60" fill="url(#lightMain)" opacity="0.25">
+    <animate attributeName="cy" values="100;80;100" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Left side - Icon -->
+  <g transform="translate(100, 250)">
+    <circle cx="0" cy="0" r="95" fill="white" opacity="0.95" filter="url(#mainShadow)"/>
+
+    <!-- Icon content - Three sections -->
+    <g transform="translate(0, 0)">
+      <!-- Top - Expiry -->
+      <g transform="translate(0, -35)">
+        <rect x="-40" y="-12" width="80" height="12" rx="4" fill="url(#accentMain)" filter="url(#mainGlow)"/>
+        <text x="0" y="4" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="url(#accentMain)" text-anchor="middle">EXPIRY</text>
+      </g>
+
+      <!-- Middle - Custom Fields -->
+      <g transform="translate(0, -5)">
+        <rect x="-40" y="-4" width="55" height="3" rx="1.5" fill="url(#bgMain)" opacity="0.6"/>
+        <rect x="-40" y="3" width="40" height="3" rx="1.5" fill="url(#bgMain)" opacity="0.6"/>
+        <rect x="20" y="-6" width="20" height="16" rx="3" stroke="url(#accentMain)" stroke-width="2" fill="none"/>
+      </g>
+
+      <!-- Bottom - Post Types -->
+      <g transform="translate(0, 30)">
+        <rect x="-24" y="-8" width="12" height="14" rx="2" fill="url(#accentMain)" opacity="0.8"/>
+        <rect x="-6" y="-8" width="12" height="14" rx="2" fill="url(#accentMain)"/>
+        <rect x="12" y="-8" width="12" height="14" rx="2" fill="url(#accentMain)" opacity="0.8"/>
+        <text x="0" y="13" font-family="Arial, sans-serif" font-size="7" font-weight="600" fill="url(#bgMain)" text-anchor="middle">TYPES</text>
+      </g>
+    </g>
+
+    <!-- Sparkles -->
+    <g fill="#ffffff" opacity="0.9" filter="url(#mainGlow)">
+      <path d="M -110,-75 l 6,6 l 6,-6 l -6,-6 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 -110 -75;360 -110 -75" dur="18s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 110,-80 l 5,5 l 5,-5 l -5,-5 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 110 -80;-360 110 -80" dur="15s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Right side - Text content -->
+  <g transform="translate(280, 250)">
+    <!-- Main title -->
+    <text x="0" y="-110" font-family="Arial, sans-serif" font-size="68" font-weight="900" fill="white" filter="url(#mainShadow)" letter-spacing="-2">
+      AIT Easy Post Customization
+    </text>
+
+    <!-- Subtitle with features -->
+    <text x="0" y="-50" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="white" opacity="0.95">
+      Complete WordPress Post Management Solution
+    </text>
+
+    <!-- Feature list -->
+    <g transform="translate(0, -10)">
+      <!-- Feature 1 - Expiry Date -->
+      <g>
+        <circle cx="8" cy="0" r="8" fill="url(#accentMain)" filter="url(#mainGlow)"/>
+        <text x="8" y="5" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="30" y="6" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="white">
+          Automatic Post Expiry Date Management
+        </text>
+      </g>
+
+      <!-- Feature 2 - Custom Fields -->
+      <g transform="translate(0, 35)">
+        <circle cx="8" cy="0" r="8" fill="url(#accentMain)" filter="url(#mainGlow)"/>
+        <text x="8" y="5" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="30" y="6" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="white">
+          Advanced Custom Fields (Text, Textarea, Date)
+        </text>
+      </g>
+
+      <!-- Feature 3 - Post Types -->
+      <g transform="translate(0, 70)">
+        <circle cx="8" cy="0" r="8" fill="url(#accentMain)" filter="url(#mainGlow)"/>
+        <text x="8" y="5" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="30" y="6" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="white">
+          Full Custom Post Type Support & Creation
+        </text>
+      </g>
+
+      <!-- Feature 4 - Premium UI -->
+      <g transform="translate(0, 105)">
+        <circle cx="8" cy="0" r="8" fill="url(#accentMain)" filter="url(#mainGlow)"/>
+        <text x="8" y="5" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="30" y="6" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="white">
+          Premium Dashboard with Modern UI/UX Design
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom badges -->
+    <g transform="translate(0, 140)">
+      <!-- Badge 1 -->
+      <g>
+        <rect x="0" y="0" width="160" height="45" rx="22" fill="url(#accentMain)" opacity="0.95" filter="url(#mainShadow)"/>
+        <text x="80" y="29" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">✨ Premium</text>
+      </g>
+
+      <!-- Badge 2 -->
+      <g transform="translate(175, 0)">
+        <rect x="0" y="0" width="140" height="45" rx="22" fill="url(#accentMain)" opacity="0.95" filter="url(#mainShadow)"/>
+        <text x="70" y="29" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">🚀 Fast</text>
+      </g>
+
+      <!-- Badge 3 -->
+      <g transform="translate(330, 0)">
+        <rect x="0" y="0" width="160" height="45" rx="22" fill="url(#accentMain)" opacity="0.95" filter="url(#mainShadow)"/>
+        <text x="80" y="29" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">💯 Free</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom decorative accent -->
+  <rect x="0" y="480" width="1544" height="20" fill="url(#accentMain)" opacity="0.7"/>
+
+  <!-- Overlay -->
+  <rect width="1544" height="500" fill="url(#lightMain)" opacity="0.12"/>
+</svg>

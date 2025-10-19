@@ -1,0 +1,141 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Accent gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Light gradient -->
+    <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow filter -->
+    <filter id="iconShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="256" height="256" rx="60" fill="url(#primaryGrad)"/>
+
+  <!-- Decorative floating circles -->
+  <circle cx="210" cy="46" r="35" fill="url(#whiteGrad)" opacity="0.4">
+    <animate attributeName="cy" values="46;56;46" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="35" cy="210" r="28" fill="url(#whiteGrad)" opacity="0.35">
+    <animate attributeName="cy" values="210;200;210" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main icon composition - Three feature cards stacked -->
+  <g transform="translate(128, 128)">
+
+    <!-- Background card stack effect -->
+    <rect x="-75" y="-55" width="150" height="110" rx="12" fill="rgba(255,255,255,0.15)" transform="rotate(-3)"/>
+    <rect x="-75" y="-55" width="150" height="110" rx="12" fill="rgba(255,255,255,0.2)" transform="rotate(2)"/>
+
+    <!-- Main white card -->
+    <rect x="-75" y="-55" width="150" height="110" rx="12" fill="white" filter="url(#iconShadow)"/>
+
+    <!-- Top section - Calendar/Expiry Date -->
+    <g transform="translate(0, -28)">
+      <!-- Calendar header -->
+      <rect x="-55" y="-20" width="110" height="16" rx="6" fill="url(#accentGrad)" filter="url(#iconGlow)"/>
+
+      <!-- Calendar icon - mini -->
+      <g transform="translate(-40, 5)">
+        <rect x="-8" y="-6" width="16" height="14" rx="2" stroke="url(#accentGrad)" stroke-width="1.5" fill="none"/>
+        <line x1="-8" y1="-2" x2="8" y2="-2" stroke="url(#accentGrad)" stroke-width="1.5"/>
+        <circle cx="-3" cy="2" r="1.2" fill="url(#accentGrad)"/>
+        <circle cx="3" cy="2" r="1.2" fill="url(#accentGrad)"/>
+      </g>
+
+      <!-- "Expiry" text representation -->
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="url(#accentGrad)" text-anchor="middle">EXPIRY</text>
+    </g>
+
+    <!-- Middle section - Custom Fields -->
+    <g transform="translate(0, 5)">
+      <!-- Input field lines -->
+      <g opacity="0.7">
+        <rect x="-55" y="-6" width="70" height="3" rx="1.5" fill="url(#primaryGrad)"/>
+        <rect x="-55" y="2" width="50" height="3" rx="1.5" fill="url(#primaryGrad)"/>
+      </g>
+
+      <!-- Field icon -->
+      <g transform="translate(35, 0)">
+        <rect x="-10" y="-8" width="20" height="16" rx="3" stroke="url(#accentGrad)" stroke-width="2" fill="none"/>
+        <line x1="-6" y1="-3" x2="6" y2="-3" stroke="url(#accentGrad)" stroke-width="1.5"/>
+        <line x1="-6" y1="2" x2="6" y2="2" stroke="url(#accentGrad)" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Bottom section - Custom Post Types -->
+    <g transform="translate(0, 35)">
+      <!-- Post type icons (3 small document icons) -->
+      <g transform="translate(-30, 0)">
+        <rect x="-6" y="-8" width="12" height="14" rx="2" fill="url(#accentGrad)" opacity="0.8"/>
+        <line x1="-3" y1="-4" x2="3" y2="-4" stroke="white" stroke-width="1" opacity="0.9"/>
+        <line x1="-3" y1="0" x2="3" y2="0" stroke="white" stroke-width="1" opacity="0.9"/>
+      </g>
+
+      <g transform="translate(0, 0)">
+        <rect x="-6" y="-8" width="12" height="14" rx="2" fill="url(#accentGrad)"/>
+        <line x1="-3" y1="-4" x2="3" y2="-4" stroke="white" stroke-width="1" opacity="0.9"/>
+        <line x1="-3" y1="0" x2="3" y2="0" stroke="white" stroke-width="1" opacity="0.9"/>
+      </g>
+
+      <g transform="translate(30, 0)">
+        <rect x="-6" y="-8" width="12" height="14" rx="2" fill="url(#accentGrad)" opacity="0.8"/>
+        <line x1="-3" y1="-4" x2="3" y2="-4" stroke="white" stroke-width="1" opacity="0.9"/>
+        <line x1="-3" y1="0" x2="3" y2="0" stroke="white" stroke-width="1" opacity="0.9"/>
+      </g>
+
+      <!-- Label -->
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="url(#primaryGrad)" text-anchor="middle">POST TYPES</text>
+    </g>
+
+    <!-- Sparkle effects around the card -->
+    <g fill="white" opacity="0.9" filter="url(#iconGlow)">
+      <path d="M -88,-45 l 4,4 l 4,-4 l -4,-4 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 -88 -45;360 -88 -45" dur="12s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 88,-50 l 3.5,3.5 l 3.5,-3.5 l -3.5,-3.5 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 88 -50;-360 88 -50" dur="10s" repeatCount="indefinite"/>
+      </path>
+      <path d="M -85,50 l 3.5,3.5 l 3.5,-3.5 l -3.5,-3.5 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 -85 50;360 -85 50" dur="11s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 85,55 l 4,4 l 4,-4 l -4,-4 z">
+        <animateTransform attributeName="transform" type="rotate" values="0 85 55;-360 85 55" dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Plus icon indicator (for "add" functionality) -->
+    <g transform="translate(55, -45)" opacity="0.9">
+      <circle cx="0" cy="0" r="12" fill="url(#accentGrad)" filter="url(#iconGlow)"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Bottom decorative bar -->
+  <rect x="0" y="235" width="256" height="21" rx="0 0 60 60" fill="url(#accentGrad)" opacity="0.6"/>
+</svg>

@@ -11,13 +11,14 @@ if (!defined('ABSPATH')) {
 
 // Add a separate menu page in the WordPress dashboard
 function aitepc_expiry_date_menu_page() {
+    $icon_url = plugins_url('assets/images/icon.svg', dirname(__FILE__));
     add_menu_page(
         __('Easy Post Customization Settings', 'ait-easy-post-customization'),
         __('Easy Post Customization', 'ait-easy-post-customization'),
         'manage_options',
         'aitepc-expiry-date-settings',
         'aitepc_expiry_date_settings_page_html',
-        'dashicons-calendar-alt',
+        $icon_url,
         20
     );
 }

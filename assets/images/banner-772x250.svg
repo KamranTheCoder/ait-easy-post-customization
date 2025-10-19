@@ -1,0 +1,107 @@
+<svg width="772" height="250" viewBox="0 0 772 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg772" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="acc772" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lt772" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow772">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shd772">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="772" height="250" fill="url(#bg772)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="675" cy="50" r="60" fill="url(#lt772)" opacity="0.3"/>
+  <circle cx="725" cy="175" r="40" fill="url(#lt772)" opacity="0.25"/>
+  <circle cx="50" cy="200" r="50" fill="url(#lt772)" opacity="0.2"/>
+
+  <!-- Icon -->
+  <g transform="translate(65, 125)">
+    <circle cx="0" cy="0" r="52" fill="white" opacity="0.95" filter="url(#shd772)"/>
+
+    <g transform="translate(0, -20)">
+      <rect x="-25" y="-8" width="50" height="8" rx="3" fill="url(#acc772)" filter="url(#glow772)"/>
+      <text x="0" y="3" font-family="Arial, sans-serif" font-size="6" font-weight="700" fill="url(#acc772)" text-anchor="middle">EXPIRY</text>
+    </g>
+
+    <g transform="translate(0, 0)">
+      <rect x="-25" y="-2" width="35" height="2" rx="1" fill="url(#bg772)" opacity="0.5"/>
+      <rect x="-25" y="2" width="25" height="2" rx="1" fill="url(#bg772)" opacity="0.5"/>
+      <rect x="12" y="-4" width="13" height="10" rx="2" stroke="url(#acc772)" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <g transform="translate(0, 18)">
+      <rect x="-15" y="-5" width="8" height="10" rx="1.5" fill="url(#acc772)" opacity="0.8"/>
+      <rect x="-4" y="-5" width="8" height="10" rx="1.5" fill="url(#acc772)"/>
+      <rect x="7" y="-5" width="8" height="10" rx="1.5" fill="url(#acc772)" opacity="0.8"/>
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="5" font-weight="600" fill="url(#bg772)" text-anchor="middle">TYPES</text>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(150, 125)">
+    <text x="0" y="-55" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="white" filter="url(#shd772)" letter-spacing="-1">
+      AIT Easy Post Customization
+    </text>
+    <text x="0" y="-25" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="white" opacity="0.95">
+      Complete WordPress Post Management Solution
+    </text>
+
+    <!-- Features -->
+    <g transform="translate(0, -5)">
+      <g>
+        <circle cx="5" cy="0" r="4" fill="url(#acc772)" filter="url(#glow772)"/>
+        <text x="5" y="3" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="18" y="4" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">
+          Expiry Date Management
+        </text>
+      </g>
+
+      <g transform="translate(0, 18)">
+        <circle cx="5" cy="0" r="4" fill="url(#acc772)" filter="url(#glow772)"/>
+        <text x="5" y="3" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="18" y="4" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">
+          Custom Fields (Text, Textarea, Date)
+        </text>
+      </g>
+
+      <g transform="translate(0, 36)">
+        <circle cx="5" cy="0" r="4" fill="url(#acc772)" filter="url(#glow772)"/>
+        <text x="5" y="3" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="18" y="4" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">
+          Custom Post Type Support
+        </text>
+      </g>
+
+      <g transform="translate(0, 54)">
+        <circle cx="5" cy="0" r="4" fill="url(#acc772)" filter="url(#glow772)"/>
+        <text x="5" y="3" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="white" text-anchor="middle">✓</text>
+        <text x="18" y="4" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="white">
+          Premium Dashboard Design
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="240" width="772" height="10" fill="url(#acc772)" opacity="0.7"/>
+  <rect width="772" height="250" fill="url(#lt772)" opacity="0.12"/>
+</svg>
