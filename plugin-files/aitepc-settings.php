@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 
 // Add a separate menu page in the WordPress dashboard
 function aitepc_expiry_date_menu_page() {
-    $icon_url = plugins_url('assets/images/icon.svg', dirname(__FILE__));
+    $icon_url = plugins_url('assets/images/menu-icon.svg', dirname(__FILE__));
     add_menu_page(
         __('Easy Post Customization Settings', 'ait-easy-post-customization'),
         __('Easy Post Customization', 'ait-easy-post-customization'),

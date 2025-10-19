@@ -1,0 +1,21 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="menuGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a0a5aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a0a5aa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Simple card icon -->
+  <rect x="2" y="3" width="16" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+
+  <!-- Calendar/Expiry indicator on top -->
+  <rect x="4" y="5" width="12" height="3" rx="1" fill="currentColor"/>
+
+  <!-- Custom fields lines -->
+  <line x1="4" y1="10" x2="12" y2="10" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="4" y1="12.5" x2="10" y2="12.5" stroke="currentColor" stroke-width="1.2"/>
+
+  <!-- Post type indicator (small document) -->
+  <rect x="13" y="10" width="3" height="4" rx="0.5" fill="currentColor"/>
+</svg>
