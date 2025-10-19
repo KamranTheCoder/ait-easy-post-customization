@@ -4,7 +4,7 @@ Tags: post expiration, post expiry, expiry date, schedule post, auto expire, cus
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -93,6 +93,12 @@ Yes, AIT Easy Post Customization is completely free to use and is licensed under
 3. Custom fields metabox on a post edit screen.
 
 == Changelog ==
+= 2.0.1 - 2025-10-20 =
+* Fixed menu icon rendering issue - icon was spreading across the interface
+* Added properly sized menu-icon.svg (20x20) for WordPress admin sidebar
+* Menu icon now uses currentColor for theme compatibility
+* Improved icon display consistency with WordPress standards
+
 = 2.0.0 - 2025-10-20 =
 **COMPLETE DASHBOARD REDESIGN - PREMIUM EDITION**
 * ✨ **BRAND NEW DESIGN**: Completely rebuilt dashboard with outstanding premium aesthetics
